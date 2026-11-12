@@ -1,0 +1,200 @@
+{
+ "title": "WHY DO WE FORGET?",
+ "video": {
+  "src": "https://github.com/sammyjacob7065-ship-it/movie-factory/releases/download/film-265/film.mp4"
+ },
+ "nextLesson": "HOW DOES YOUR BRAIN CONTROL YOUR EMOTIONS?",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "Deleting old memories",
+    "Turning information into a form the brain can store",
+    "Sleeping deeply",
+    "Forgetting a name"
+   ],
+   "q": "What is encoding?",
+   "good": "Correct! Encoding is how information is first processed into a memory.",
+   "hint": "Think about what happens when your brain first receives information.",
+   "review": "Encoding, the first stage of making a memory."
+  },
+  {
+   "a": 1,
+   "o": [
+    "The cerebellum",
+    "The hippocampus",
+    "The spinal cord",
+    "The brain stem"
+   ],
+   "q": "Which part of the brain is especially important for forming new memories?",
+   "good": "Exactly! The hippocampus helps form many new memories.",
+   "hint": "It sits deep inside the brain and links the parts of an experience.",
+   "review": "The hippocampus and how it forms new memories."
+  },
+  {
+   "a": 1,
+   "o": [
+    "A permanent storage room",
+    "A small workspace that holds information for a short time",
+    "A process that only happens in sleep",
+    "The ability to remember every experience"
+   ],
+   "q": "What is working memory?",
+   "good": "Correct! Working memory holds information while you use it.",
+   "hint": "Think of holding a phone number long enough to type it.",
+   "review": "Working memory and its small capacity."
+  },
+  {
+   "a": 2,
+   "o": [
+    "The permanent loss of neurons",
+    "The brain switching off in sleep",
+    "Connections between neurons becoming stronger or weaker with experience",
+    "Blood moving through the brain"
+   ],
+   "q": "What is synaptic plasticity?",
+   "good": "Well done! The brain adapts through experience.",
+   "hint": "Think about how practice changes the connections between neurons.",
+   "review": "Synaptic plasticity, how practice changes the brain."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Forgetting a new experience at once",
+    "Repeating a word one time",
+    "The process that settles and stabilizes a new memory",
+    "Removing distractions from a room"
+   ],
+   "q": "What is memory consolidation?",
+   "good": "Correct! Consolidation makes new memories more stable.",
+   "hint": "Think about what happens to a memory after it is first formed.",
+   "review": "Stage two, consolidation."
+  },
+  {
+   "a": 1,
+   "o": [
+    "By switching the brain off",
+    "By supporting memory consolidation",
+    "By deleting difficult information",
+    "By stopping you from learning"
+   ],
+   "q": "How does sleep help memory?",
+   "good": "Exactly! Sleep supports the settling of memories.",
+   "hint": "The brain stays active while you sleep.",
+   "review": "Why sleep matters for memory."
+  },
+  {
+   "a": 1,
+   "o": [
+    "A type of brain injury",
+    "When other memories make a memory harder to learn or recall",
+    "A total loss of intelligence",
+    "The same thing as sleep"
+   ],
+   "q": "What is interference?",
+   "good": "Correct! Similar memories can compete with each other.",
+   "hint": "Think about mixing up an old and a new password.",
+   "review": "Reason one, interference."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Making a new neuron",
+    "Sleeping after study",
+    "Getting information back out of memory",
+    "Ignoring information"
+   ],
+   "q": "What is retrieval?",
+   "good": "Well done! Retrieval is how you bring a memory back.",
+   "hint": "It happens when you try to remember an answer.",
+   "review": "Retrieval, and why it sometimes fails."
+  },
+  {
+   "a": 1,
+   "o": [
+    "A machine that records brain activity",
+    "A hint, like a smell or song, that helps you find a memory",
+    "A kind of neuron",
+    "A way to delete memories"
+   ],
+   "q": "What is a retrieval cue?",
+   "good": "Correct! A smell, a song or a photograph can bring a memory back.",
+   "hint": "Think about what can remind you of an old event.",
+   "review": "Reason three, retrieval cues."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Every memory is a perfect recording",
+    "Feeling confident proves a memory is correct",
+    "Remembering rebuilds the event, so details can change",
+    "Memories never change after learning"
+   ],
+   "q": "Which statement about memory is true?",
+   "good": "Excellent! Memory is rebuilt each time, so details can change.",
+   "hint": "Think about why two people can remember the same event differently.",
+   "review": "Reason four, memory changes."
+  },
+  {
+   "a": 3,
+   "o": [
+    "Studying only once",
+    "Skipping sleep",
+    "Reading while distracted",
+    "Practising recall again and again over several days"
+   ],
+   "q": "Which habit helps you remember for a long time?",
+   "good": "Excellent! Recall practice spread over time helps memory last.",
+   "hint": "Try to remember without looking at your notes.",
+   "review": "Retrieval practice and spaced practice."
+  }
+ ],
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok9.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/ok10.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss9.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/miss10.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev9.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/why-do-we-forget-265/rev10.mp3"
+  ]
+ }
+}
