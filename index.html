@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lesson 1: Your first cold email</title>
+<style>
+:root{--ink:#16203a;--bg:#f4f6fb;--blue:#1f3a8a;--ok:#0a8f4d;--okbg:#e3f6ec;--bad:#c62828;--badbg:#fdeaea;--cy:#00a6d6}
+*{box-sizing:border-box}body{font-family:system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+header{background:var(--blue);color:#fff;padding:18px 24px;font-size:clamp(22px,4vw,38px);font-weight:700}
+main{max-width:900px;margin:0 auto;padding:20px}
+.video{background:#000;border-radius:14px;overflow:hidden;aspect-ratio:16/9;width:100%}
+.video video,.video iframe{width:100%;height:100%;border:0;display:block}
+.card{background:#fff;border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 4px 18px #0001}
+.bar{height:10px;background:#dde3f2;border-radius:6px;overflow:hidden;margin-bottom:14px}.bar i{display:block;height:100%;width:0;background:var(--cy);transition:width .4s}
+h2{margin:0 0 12px;font-size:clamp(22px,3.6vw,34px)}.q{font-size:clamp(20px,3vw,28px);margin:0 0 14px}
+.opt{display:block;width:100%;text-align:left;font-size:clamp(18px,2.6vw,26px);padding:14px 16px;margin:10px 0;border:2px solid #b8c3e0;border-radius:12px;background:#fff;color:var(--ink);cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--cy)}.opt.good{background:var(--okbg);border-color:var(--ok);color:var(--ok);font-weight:700}.opt.bad{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.opt:disabled{cursor:default}
+.fb{min-height:1.6em;font-size:clamp(18px,2.6vw,26px);margin:10px 0;font-weight:600}.fb.good{color:var(--ok)}.fb.bad{color:var(--bad)}
+.next{font-size:clamp(18px,2.6vw,26px);padding:14px 30px;border:0;border-radius:12px;background:var(--cy);color:#fff;cursor:pointer}.next:disabled{background:#b9c4de;cursor:not-allowed}
+.score{text-align:center}.big{font-size:clamp(40px,9vw,84px);font-weight:800;color:var(--blue);margin:8px 0}
+.hide{display:none}
+.voice{display:block;margin:6px 0 14px;font-size:clamp(14px,2vw,18px);padding:8px 14px;border:2px solid #b8c3e0;border-radius:999px;background:#fff;color:var(--ink);cursor:pointer}
+.review{text-align:left;background:#fff7e6;border:2px solid #ffd58a;border-radius:14px;padding:6px 20px;margin:14px 0}.review h3{margin:10px 0 4px;font-size:clamp(20px,3vw,28px)}.review li{font-size:clamp(18px,2.6vw,26px);margin:8px 0}
+@media (min-width:1200px){body{zoom:1.75}}   /* on a big screen (and in the video) everything is larger and easy to read */
+</style></head><body>
+<header id="title">Lesson 1: Your first cold email</header>
+<main>
+  <!-- 1. VIDEO AT THE TOP. Put your lesson video link in data-src (a .mp4 file) or data-embed (a YouTube embed link). -->
+  <div class="video" id="video" data-src="" data-embed=""></div>
+
+  <!-- 2. KNOWLEDGE CHECK RIGHT UNDER THE VIDEO -->
+  <section class="card" id="quiz">
+    <div class="bar"><i id="bar"></i></div>
+    <h2 id="count">Question 1 of 5</h2>
+    <p class="q" id="q"></p>
+    <div id="opts"></div>
+    <div class="fb" id="fb" aria-live="polite"></div>
+    <button class="voice" id="voiceBtn" type="button" aria-pressed="true" title="Teacher voice">🔊 Teacher voice: on</button>
+    <button class="next" id="next" disabled>Next question</button>
+  </section>
+
+  <!-- 3. SCORE SUMMARY -->
+  <section class="card score hide" id="result">
+    <h2>Lesson complete</h2>
+    <div class="big" id="scoreText"></div>
+    <p class="q" id="scoreNote"></p>
+    <div id="review" class="review hide"><h3>Go back and review</h3><ul id="reviewList"></ul></div>
+    <button class="next" id="again">Try again</button>
+  </section>
+</main>
+<script>
+/* EDIT HERE: your questions. a = index of the right answer (0 = first). good = note when right. hint = help when wrong. */
+let LESSON = {
+  title: "Lesson 1: Your first cold email",
+  nextLesson: "Ready for the next lesson!",
+  questions: [
+    {q:"How long should a cold email be?", o:["Very long","Short and clear","As long as possible"], a:1, good:"Correct! Short and clear wins.", hint:"People read on their phones. Keep it short."},
+    {q:"What should the subject line do?", o:["Make the reader want to open it","Hide who you are","Be written in capital letters"], a:0, good:"Yes! A good subject earns the open.", hint:"Think about why anyone would click it."},
+    {q:"Who should you write to?", o:["Everyone","One person who needs your help","Nobody yet"], a:1, good:"Right! One real person at a time.", hint:"Personal messages get replies."},
+    {q:"When should you follow up?", o:["Never","Every hour","After a few days"], a:2, good:"Great! A calm follow-up works.", hint:"Give them time, but do not forget them."},
+    {q:"What is the goal of the first email?", o:["Sell everything","Start a conversation","Send a long CV"], a:1, good:"Exactly! Start a conversation.", hint:"You are opening a door, not closing a deal."}
+  ]
+};
+const $ = id => document.getElementById(id);
+let i = 0, score = 0, answered = false, missed = [], voiceOn = true, cur = null, seq = 0;
+/* THE INVISIBLE TEACHER: short voice clips made for this lesson (LESSON.audio). No clips = the page stays silent. */
+function say(urls){                         // plays one clip or a list of clips, one after the other; a new call stops the old one
+  const my = ++seq; if (cur){ try { cur.pause(); } catch (e) {} cur = null; }
+  if (!voiceOn) return;
+  const list = (Array.isArray(urls) ? urls : [urls]).filter(Boolean);
+  (function next(k){
+    if (my !== seq || k >= list.length) return;
+    try { const a = new Audio(list[k]); cur = a; a.onended = () => setTimeout(() => next(k + 1), 250); a.onerror = () => next(k + 1); const p = a.play(); if (p && p.catch) p.catch(() => {}); } catch (e) {}
+  })(0);
+}
+const AU = () => (LESSON.audio || {});
+function setupVideo(){
+  const v = $('video'), src = v.dataset.src, emb = v.dataset.embed;
+  if (src) v.innerHTML = '<video controls playsinline preload="metadata" src="'+src+'"></video>';
+  else if (emb) v.innerHTML = '<iframe src="'+emb+'" allowfullscreen></iframe>';
+  else v.classList.add('hide');                       // no video link yet: the quiz starts at the top
+}
+function show(){
+  const Q = LESSON.questions[i]; answered = false;
+  $('count').textContent = 'Question ' + (i+1) + ' of ' + LESSON.questions.length;
+  $('bar').style.width = (i / LESSON.questions.length * 100) + '%';
+  $('q').textContent = Q.q; $('fb').textContent = ''; $('fb').className = 'fb';
+  $('next').disabled = true; $('next').textContent = (i === LESSON.questions.length-1) ? 'See my score' : 'Next question';
+  $('opts').innerHTML = '';
+  Q.o.forEach((t, k) => { const b = document.createElement('button'); b.className = 'opt'; b.textContent = t; b.onclick = () => pick(k, b); $('opts').appendChild(b); });
+}
+function pick(k, btn){
+  if (answered) return; answered = true;                 // instant feedback, then the Next button unlocks
+  const Q = LESSON.questions[i], all = [...document.querySelectorAll('.opt')];
+  if (k === Q.a){ score++; say((AU().ok || [])[i]); btn.classList.add('good'); $('fb').textContent = '✔ ' + Q.good; $('fb').className = 'fb good'; }
+  else { missed.push(i); say((AU().miss || [])[i]); btn.classList.add('bad'); all[Q.a].classList.add('good'); $('fb').textContent = '✘ Not quite. ' + Q.hint; $('fb').className = 'fb bad'; }
+  all.forEach(b => b.disabled = true); $('next').disabled = false;
+}
+$('next').onclick = () => {
+  if (!answered) return;
+  if (i < LESSON.questions.length - 1){ i++; show(); return; }
+  $('bar').style.width = '100%'; $('quiz').classList.add('hide'); $('result').classList.remove('hide');
+  const n = LESSON.questions.length;
+  $('scoreText').textContent = 'You scored ' + score + '/' + n;
+  const band = score === n ? 'perfect' : (score / n >= 0.7 ? 'good' : 'low');
+  $('scoreNote').textContent = (band === 'perfect' ? 'Perfect! ' : band === 'good' ? 'Well done. ' : 'Good try. Watch the video again and retry. ') + (band === 'low' ? '' : LESSON.nextLesson);
+  const L = $('reviewList'); L.innerHTML = '';
+  missed.forEach(k => { const q = LESSON.questions[k]; const li = document.createElement('li'); li.textContent = q.review || q.q; L.appendChild(li); });
+  $('review').classList.toggle('hide', !missed.length);
+  const A = AU(); say([(A.intro || {})[band]].concat(missed.map(k => (A.rev || [])[k])).concat(band === 'low' ? [] : [A.next]));
+};
+$('again').onclick = () => { i = 0; score = 0; missed = []; say([]); $('result').classList.add('hide'); $('quiz').classList.remove('hide'); show(); };
+/* Each video lesson has its own questions in a small file: lessons/<name>.json, opened with  index.html?lesson=<name>
+   (or a file called lesson.json next to this page). If neither exists, the questions above are used. */
+function start(){
+  $('voiceBtn').onclick = () => { voiceOn = !voiceOn; $('voiceBtn').textContent = voiceOn ? '🔊 Teacher voice: on' : '🔇 Teacher voice: off'; $('voiceBtn').setAttribute('aria-pressed', voiceOn); if (!voiceOn) say([]); };
+document.title = LESSON.title; $('title').textContent = LESSON.title;
+  const v = $('video');
+  if (LESSON.video){ v.dataset.src = LESSON.video.src || ''; v.dataset.embed = LESSON.video.embed || ''; }
+  setupVideo();
+  const vid = document.querySelector('#video video'); if (vid && (AU().start)) vid.addEventListener('ended', () => say(AU().start));
+  if (!(AU() && Object.keys(AU()).length)) $('voiceBtn').classList.add('hide');
+  if (!LESSON.questions.length){ $('quiz').classList.add('hide'); return; }
+  show();
+}
+(function load(){
+  if (window.__LESSON__ && Array.isArray(window.__LESSON__.questions) && window.__LESSON__.questions.length){   // the video builder hands the questions from the script
+    LESSON = Object.assign({}, LESSON, window.__LESSON__); start(); return;
+  }
+  const name = (new URLSearchParams(location.search).get('lesson') || '').replace(/[^a-z0-9_\-]/gi, '');
+  const url = name ? 'lessons/' + name + '.json' : 'lesson.json';
+  fetch(url, {cache: 'no-store'}).then(r => r.ok ? r.json() : Promise.reject()).then(j => {
+    if (j && Array.isArray(j.questions)) LESSON = Object.assign({}, LESSON, j);   // a lesson with no questions shows only the video
+  }).catch(() => {}).then(start);
+})();
+</script></body></html>
