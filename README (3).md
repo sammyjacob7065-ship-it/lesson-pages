@@ -9,7 +9,7 @@ This repo is filled in **automatically** by the Movie Factory workflow. You do n
 1. You send a script to the Telegram bot. It has a `QUIZ:` block (or starts with `/Developer`).
 2. The video is built.
 3. The workflow saves `lessons/<lesson-name>.json` in this repo (the video link and the questions).
-4. The bot sends you a link like `https://YOURNAME.github.io/lesson-pages/?lesson=<lesson-name>`.
+4. The bot sends you a link like `https://YOUR-NAME.vercel.app/?lesson=<lesson-name>` (your Vercel address).
 5. You share that link with students, schools or clients. Add it to the YouTube description too.
 
 ## What is in this repo
@@ -43,7 +43,19 @@ Start the script with `/Developer` and add `SCREEN:` and `STEPS:` lines. A real 
 A scene with a `SCREEN:` line becomes a live page. Without `/Developer`, only the scenes that have `SCREEN:` are live.
 
 ## If something does not work
-- The repo must be **Public**, and GitHub Pages must be on (Settings, Pages, Branch main, Save). The workflow tries to switch it on for you.
+- The repo `lesson-pages` can be Public or Private. Vercel shows the page; GitHub only stores it.
+- Students never need GitHub: they only open the Vercel link.
 - The first time, the link can take 1-2 minutes to start working.
 - The GitHub token in n8n needs the **repo** permission.
 - If the page cannot be published, the bot tells you why. The video is not affected.
+
+
+## One-time Vercel setup (5 minutes, free)
+1. Go to vercel.com and sign up with GitHub.
+2. Add New, Project, pick the `lesson-pages` repo, Import.
+3. Framework Preset: **Other**. Leave everything else empty. Click **Deploy**.
+4. Copy your address (like `https://lesson-pages.vercel.app`).
+5. In the n8n node "Assemble: Publish Lesson Page", paste it in the line `siteUrl: ""`, Save.
+6. After that, every new lesson is saved to the repo, and Vercel updates the page by itself in about 30 seconds.
+
+Note: Vercel's free Hobby plan is for personal, non-commercial use. If this becomes a paid course, move the same repo to Cloudflare Pages or Netlify (also free), or upgrade Vercel.
