@@ -1,0 +1,143 @@
+{
+ "title": "Figure of Speech",
+ "video": {
+  "src": "https://github.com/sammyjacob7065-ship-it/movie-factory/releases/download/film-262/film.mp4"
+ },
+ "nextLesson": "Ready for the next lesson!",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "Time is a thief.",
+    "She is as brave as a lion.",
+    "The wind whispered."
+   ],
+   "q": "Which sentence is a simile?",
+   "good": "Correct! It uses the word as.",
+   "hint": "A simile uses like or as to compare.",
+   "review": "Simile"
+  },
+  {
+   "a": 1,
+   "o": [
+    "Simile",
+    "Metaphor",
+    "Idiom"
+   ],
+   "q": "Time is a thief. What is this?",
+   "good": "Yes! It says time is a thief, with no like or as.",
+   "hint": "It does not use like or as, so it is a metaphor.",
+   "review": "Metaphor"
+  },
+  {
+   "a": 2,
+   "o": [
+    "Hyperbole",
+    "Alliteration",
+    "Personification"
+   ],
+   "q": "The wind whispered through the trees. What is this?",
+   "good": "Right! The wind acts like a person.",
+   "hint": "A thing is doing what only a person can do.",
+   "review": "Personification"
+  },
+  {
+   "a": 2,
+   "o": [
+    "Oxymoron",
+    "Simile",
+    "Hyperbole"
+   ],
+   "q": "I am so hungry I could eat a horse. What is this?",
+   "good": "Correct! It makes the hunger much bigger.",
+   "hint": "The sentence is a big exaggeration.",
+   "review": "Hyperbole"
+  },
+  {
+   "a": 1,
+   "o": [
+    "It is sweet.",
+    "It is very easy.",
+    "It is a gift."
+   ],
+   "q": "It is a piece of cake. What does it mean?",
+   "good": "Yes! It means it is very easy.",
+   "hint": "An idiom has a special meaning, not the plain one.",
+   "review": "Idiom"
+  },
+  {
+   "a": 1,
+   "o": [
+    "Onomatopoeia",
+    "Alliteration",
+    "Metaphor"
+   ],
+   "q": "Big blue balloons bounced by. What is this?",
+   "good": "Great! The B sound repeats.",
+   "hint": "Listen to the first sound of each word.",
+   "review": "Alliteration"
+  },
+  {
+   "a": 2,
+   "o": [
+    "As brave as a lion",
+    "Deafening silence",
+    "Boom!"
+   ],
+   "q": "Which one is onomatopoeia?",
+   "good": "Correct! Boom sounds like the noise it names.",
+   "hint": "Pick the word that sounds like a noise.",
+   "review": "Onomatopoeia"
+  },
+  {
+   "a": 0,
+   "o": [
+    "True",
+    "False"
+   ],
+   "q": "True or false: Deafening silence is an oxymoron.",
+   "good": "Correct! Two words that fight each other.",
+   "hint": "Silence cannot be loud, so the two words clash.",
+   "review": "Oxymoron"
+  }
+ ],
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/ok7.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/miss7.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/figure-of-speech-262/rev7.mp3"
+  ]
+ }
+}
