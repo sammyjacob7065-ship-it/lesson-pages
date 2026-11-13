@@ -93,9 +93,9 @@ COMPANY NAME: BrightCare Home
 | Name | Value |
 |---|---|
 | `GROQ_API_KEY` | your Groq key (for Ask the Teacher) |
-| `GMAIL_USER` | the Gmail that sends reports |
-| `GMAIL_APP_PASSWORD` | a Google **App Password** (Google Account, Security, 2-Step Verification on, App passwords) |
+| `SENDER_EMAIL` | the sender address verified in Brevo |
+| `BREVO_API_KEY` | your Brevo API key (free account at brevo.com) |
 | `SUPABASE_URL` | same as in n8n |
 | `SUPABASE_KEY` | the same service key used in n8n |
 
-Honest limits: scores are recorded by the page in the student's browser, so a very determined person could fake a report. For legal or paid certification, add a server-side exam later. Gmail sends about 500 emails a day. Vercel Hobby is non-commercial.
+Honest limits: scores are recorded by the page in the student's browser, so a very determined person could fake a report. For legal or paid certification, add a server-side exam later. Brevo free sends 300 emails a day. Vercel Hobby is non-commercial.
