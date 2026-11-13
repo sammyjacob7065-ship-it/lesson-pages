@@ -3,7 +3,7 @@ const hits = new Map();
 module.exports = async (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.setHeader('Cache-Control', 'no-store');
-  if (req.method === 'GET') return res.status(200).json({ ok: true, groq_key_set: !!process.env.GROQ_API_KEY, model: process.env.CHAT_MODEL || 'llama-3.3-70b-versatile' });
+  if (req.method === 'GET') return res.status(200).json({ ok: true, groq_key_set: !!process.env.GROQ_API_KEY, model: process.env.CHAT_MODEL || 'openai/gpt-oss-120b' });
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
   const key = process.env.GROQ_API_KEY;
   if (!key) return res.status(503).json({ error: 'not_configured' });
@@ -31,14 +31,14 @@ module.exports = async (req, res) => {
       const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST', signal: ctl.signal,
         headers: { Authorization: 'Bearer ' + key, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model, temperature: 0.3, max_tokens: 350, messages: [{ role: 'system', content: system }].concat(msgs) })
+        body: JSON.stringify({ model, reasoning_effort: 'low', temperature: 0.3, max_tokens: 1200, messages: [{ role: 'system', content: system }].concat(msgs) })
       });
       let j = null; try { j = await r.json(); } catch (e) { }
       return { r, j };
     };
-    let model = process.env.CHAT_MODEL || 'llama-3.3-70b-versatile';
+    let model = process.env.CHAT_MODEL || 'openai/gpt-oss-120b';
     let { r, j } = await call(model);
-    if (!r.ok && (r.status === 400 || r.status === 404) && model !== 'llama-3.1-8b-instant') { model = 'llama-3.1-8b-instant'; ({ r, j } = await call(model)); }   // the first model may have been retired
+    if (!r.ok && (r.status === 400 || r.status === 404 || r.status === 410) && model !== 'openai/gpt-oss-20b') { model = 'openai/gpt-oss-20b'; ({ r, j } = await call(model)); }   // backup model (Groq retired the Llama 3 models in Aug 2026)
     const reply = j && j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
     if (!r.ok || !reply) { console.error('groq failed', r.status, JSON.stringify(j).slice(0, 300)); return res.status(502).json({ error: 'teacher_unavailable', why: 'groq_' + r.status }); }
     return res.status(200).json({ reply: String(reply).trim().slice(0, 1200) });
