@@ -1,0 +1,187 @@
+{
+ "title": "UNDERSTANDING STROKE: CAUSES, WARNING SIGNS AND PREVENTION",
+ "video": {
+  "src": "https://github.com/sammyjacob7065-ship-it/movie-factory/releases/download/film-267/film.mp4"
+ },
+ "nextLesson": "HOW DOES HIGH BLOOD PRESSURE DAMAGE THE HEART AND BLOOD VESSELS?",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "A condition affecting only the heart",
+    "An interruption of blood flow to part of the brain, or bleeding in the brain",
+    "A temporary muscle cramp",
+    "An infection of the lungs"
+   ],
+   "q": "What is a stroke?",
+   "good": "Correct! Stroke happens when blood flow to the brain is interrupted or a brain vessel ruptures.",
+   "hint": "Think about the organ that loses its normal blood supply.",
+   "review": "What happens inside the brain during a stroke?"
+  },
+  {
+   "a": 1,
+   "o": [
+    "A broken bone",
+    "A blockage in an artery supplying the brain",
+    "Too much oxygen entering the lungs",
+    "A stomach infection"
+   ],
+   "q": "What causes an ischaemic stroke?",
+   "good": "Exactly! An ischaemic stroke occurs when a clot or another obstruction blocks blood flow to the brain.",
+   "hint": "Think about what happens when a blood clot blocks a vessel.",
+   "review": "Ischaemic stroke and blocked brain arteries."
+  },
+  {
+   "a": 2,
+   "o": [
+    "The brain receives too much oxygen",
+    "The heart stops permanently",
+    "A blood vessel ruptures and causes bleeding in or around the brain",
+    "The lungs become inflamed"
+   ],
+   "q": "What happens during a haemorrhagic stroke?",
+   "good": "Correct! A haemorrhagic stroke involves bleeding from a ruptured blood vessel in or around the brain.",
+   "hint": "Remember the difference between a blocked vessel and a ruptured vessel.",
+   "review": "Haemorrhagic stroke and bleeding in the brain."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Healthy eyesight",
+    "High blood pressure",
+    "Normal blood sugar",
+    "Strong fingernails"
+   ],
+   "q": "Which condition is a major risk factor for stroke?",
+   "good": "Well done! High blood pressure is a major risk factor because it can damage blood vessels.",
+   "hint": "It is a condition that may have no obvious symptoms.",
+   "review": "High blood pressure and stroke risk."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Regular physical activity",
+    "Avoiding tobacco",
+    "Diabetes and high cholesterol",
+    "Eating a balanced diet"
+   ],
+   "q": "Which of these can increase stroke risk?",
+   "good": "Correct! Diabetes and high cholesterol can increase the risk of stroke.",
+   "hint": "Think about medical conditions that affect blood vessels and circulation.",
+   "review": "Medical risk factors for stroke."
+  },
+  {
+   "a": 0,
+   "o": [
+    "Face",
+    "Fever",
+    "Fingers",
+    "Food"
+   ],
+   "q": "What does the F in F.A.S.T. stand for?",
+   "good": "Correct! F stands for Face. Look for sudden facial drooping or an uneven smile.",
+   "hint": "Ask the person to smile and observe both sides of the face.",
+   "review": "Recognising facial drooping."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Wait until the next morning",
+    "Give the person food and water",
+    "Contact emergency medical services immediately",
+    "Ask the person to sleep"
+   ],
+   "q": "What should you do if someone suddenly develops possible stroke symptoms?",
+   "good": "Exactly! Suspected stroke requires immediate emergency medical attention.",
+   "hint": "Remember that every minute counts.",
+   "review": "Emergency action when stroke is suspected."
+  },
+  {
+   "a": 1,
+   "o": [
+    "A harmless headache",
+    "A temporary interruption of blood flow causing stroke-like symptoms",
+    "A type of broken blood vessel in the leg",
+    "A normal part of ageing"
+   ],
+   "q": "What is a transient ischaemic attack, or TIA?",
+   "good": "Correct! A TIA causes temporary stroke-like symptoms and needs urgent medical assessment.",
+   "hint": "The symptoms may disappear, but the warning should not be ignored.",
+   "review": "TIA and the risk of a future stroke."
+  },
+  {
+   "a": 3,
+   "o": [
+    "Smoking regularly",
+    "Ignoring blood pressure",
+    "Avoiding all physical activity",
+    "Exercising regularly and eating a balanced diet"
+   ],
+   "q": "Which habit can help lower stroke risk?",
+   "good": "Excellent! Healthy eating and regular physical activity can help reduce stroke risk.",
+   "hint": "Think about habits that support healthy blood vessels.",
+   "review": "Lifestyle choices that help prevent stroke."
+  },
+  {
+   "a": 1,
+   "o": [
+    "To calculate the person's age",
+    "It helps healthcare professionals make urgent treatment decisions",
+    "To decide when the person should sleep",
+    "It is only needed for a routine appointment"
+   ],
+   "q": "Why should someone note the time stroke symptoms began?",
+   "good": "Correct! The time symptoms began, or when the person was last known well, helps clinicians decide which treatments may be appropriate.",
+   "hint": "Think about why emergency doctors need to know how long symptoms have been present.",
+   "review": "Why timing matters in emergency stroke care."
+  }
+ ],
+ "captions": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/captions/267.json",
+ "chat": true,
+ "disclaimer": "This lesson is for educational purposes only. It does not replace medical advice, diagnosis or treatment from a qualified healthcare professional. If stroke is suspected, seek emergency medical help immediately.",
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/ok9.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/miss9.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-267/rev9.mp3"
+  ]
+ }
+}
