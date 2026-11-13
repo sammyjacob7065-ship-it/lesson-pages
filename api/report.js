@@ -1,6 +1,6 @@
-// lesson-report-v88  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
+// lesson-report-v89  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
 // The manager's address never reaches the browser: the page sends only the episode id; this function reads REPORT_TO from your Supabase.
-// Vercel settings needed: GMAIL_USER, GMAIL_APP_PASSWORD, SUPABASE_URL, SUPABASE_KEY.
+// Sent through Brevo (free). Vercel settings needed: BREVO_API_KEY, SENDER_EMAIL (a sender you verified in Brevo), SUPABASE_URL, SUPABASE_KEY.
 const hits = new Map();
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const ord = n => ['', 'First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth'][n] || (n + 'th');
@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
   res.setHeader('Content-Type', 'application/json'); res.setHeader('Cache-Control', 'no-store');
   const out = (code, obj) => { res.statusCode = code; res.end(JSON.stringify(obj)); };
   if (req.method !== 'POST') return out(405, { error: 'post_only' });
-  const U = process.env.GMAIL_USER, P = process.env.GMAIL_APP_PASSWORD, SU = String(process.env.SUPABASE_URL || '').replace(/\/+$/, ''), SK = process.env.SUPABASE_KEY;
+  const U = String(process.env.SENDER_EMAIL || '').trim(), P = process.env.BREVO_API_KEY, SU = String(process.env.SUPABASE_URL || '').replace(/\/+$/, ''), SK = process.env.SUPABASE_KEY;
   if (!U || !P || !SU || !SK) return out(503, { error: 'not_configured' });
   const ip = String((req.headers['x-forwarded-for'] || '').split(',')[0] || 'x').trim(), now = Date.now();
   const h = (hits.get(ip) || []).filter(t => now - t < 10 * 60 * 1000);
@@ -58,10 +58,10 @@ module.exports = async (req, res) => {
     if (!to.length) return out(404, { error: 'no_report_address' });
     const cfg = { passMark: Math.max(1, Math.min(100, parseInt(s0.pass_mark, 10) || 100)), org: clean(s0.report_org).slice(0, 80) };
     const m = build({ name, email, title, attempts: A }, cfg);
-    const nodemailer = require('nodemailer');
-    const tr = process.env.REPORT_DRY_RUN ? nodemailer.createTransport({ jsonTransport: true }) : nodemailer.createTransport({ host: 'smtp.gmail.com', port: 465, secure: true, auth: { user: U, pass: P } });
-    const info = await tr.sendMail({ from: '"' + (name.replace(/["<>\\]/g, '') + ' (' + (cfg.org || 'Lesson report') + ')').slice(0, 120) + '" <' + U + '>', to: to.join(', '), replyTo: name.replace(/[<>"]/g, '') + ' <' + email + '>', subject: m.subject, text: m.text, html: m.html });
-    if (process.env.REPORT_DRY_RUN) return out(200, { ok: true, dry: JSON.parse(info.message) });
+    const payload = { sender: { name: (name.replace(/[\"<>\\]/g, '') + ' (' + (cfg.org || 'Lesson report') + ')').slice(0, 120), email: U }, to: to.map(x => ({ email: x })), replyTo: { email: email, name: name.replace(/[\"<>\\]/g, '') }, subject: m.subject, htmlContent: m.html, textContent: m.text };
+    if (process.env.REPORT_DRY_RUN) return out(200, { ok: true, dry: payload });
+    const br = await fetch('https://api.brevo.com/v3/smtp/email', { method: 'POST', headers: { 'api-key': P, 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify(payload) });
+    if (!br.ok) return out(502, { error: 'send_failed' });
     return out(200, { ok: true });
   } catch (e) { return out(502, { error: 'send_failed' }); }
 };
