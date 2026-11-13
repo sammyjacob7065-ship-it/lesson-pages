@@ -60,7 +60,7 @@ module.exports = async (req, res) => {
     const m = build({ name, email, title, attempts: A }, cfg);
     const nodemailer = require('nodemailer');
     const tr = process.env.REPORT_DRY_RUN ? nodemailer.createTransport({ jsonTransport: true }) : nodemailer.createTransport({ host: 'smtp.gmail.com', port: 465, secure: true, auth: { user: U, pass: P } });
-    const info = await tr.sendMail({ from: '"' + (cfg.org || 'Lesson reports').replace(/"/g, '') + '" <' + U + '>', to: to.join(', '), replyTo: name.replace(/[<>"]/g, '') + ' <' + email + '>', subject: m.subject, text: m.text, html: m.html });
+    const info = await tr.sendMail({ from: '"' + (name.replace(/["<>\\]/g, '') + ' (' + (cfg.org || 'Lesson report') + ')').slice(0, 120) + '" <' + U + '>', to: to.join(', '), replyTo: name.replace(/[<>"]/g, '') + ' <' + email + '>', subject: m.subject, text: m.text, html: m.html });
     if (process.env.REPORT_DRY_RUN) return out(200, { ok: true, dry: JSON.parse(info.message) });
     return out(200, { ok: true });
   } catch (e) { return out(502, { error: 'send_failed' }); }
