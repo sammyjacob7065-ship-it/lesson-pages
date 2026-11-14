@@ -1,0 +1,199 @@
+{
+ "title": "UNDERSTANDING STROKE: CAUSES, WARNING SIGNS AND PREVENTION",
+ "video": {
+  "src": "https://github.com/sammyjacob7065-ship-it/movie-factory/releases/download/film-269/film.mp4"
+ },
+ "nextLesson": "HOW DOES YOUR BODY RECOVER AFTER A STROKE?",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "A disease that only affects the heart",
+    "Blood flow to part of the brain is cut off, or a vessel in the brain bleeds",
+    "A problem caused only by old age",
+    "A pain in the neck muscles"
+   ],
+   "q": "What is a stroke?",
+   "good": "Correct! A stroke is a blocked or burst vessel that harms brain cells.",
+   "hint": "Think about what the brain needs to survive.",
+   "review": "What a stroke is: a blocked or burst vessel in the brain."
+  },
+  {
+   "a": 2,
+   "o": [
+    "About one hundredth",
+    "About one tenth",
+    "About one fifth",
+    "About one half"
+   ],
+   "q": "About how much of the body's oxygen does the brain use?",
+   "good": "Exactly! The brain is small but uses about one fifth of the body's oxygen.",
+   "hint": "The brain is only two percent of body weight, yet it is very hungry.",
+   "review": "Why the brain needs a constant blood supply."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Hemorrhagic stroke",
+    "Ischemic stroke",
+    "Both are equally common",
+    "Neither, because strokes are rare"
+   ],
+   "q": "Which type of stroke is the most common?",
+   "good": "Correct! About eighty-five in every hundred strokes are ischemic.",
+   "hint": "It is the type caused by a blockage.",
+   "review": "The two types of stroke and which is more common."
+  },
+  {
+   "a": 2,
+   "o": [
+    "The clot stays in the heart forever",
+    "The clot dissolves before it moves",
+    "The clot travels in the blood to the brain and blocks an artery",
+    "The clot makes the arteries wider"
+   ],
+   "q": "How does a clot from the heart cause a stroke in atrial fibrillation?",
+   "good": "Right! This is called an embolism.",
+   "hint": "The word embolism means a clot that travels.",
+   "review": "Embolism and atrial fibrillation."
+  },
+  {
+   "a": 1,
+   "o": [
+    "A harmless event that needs no action",
+    "A short blockage whose symptoms go away, but which is a serious warning",
+    "A stroke that only affects the legs",
+    "A type of headache"
+   ],
+   "q": "What is a transient ischemic attack, or mini-stroke?",
+   "good": "Correct! The symptoms vanish, but you must still seek help at once.",
+   "hint": "The symptoms pass, but the danger does not.",
+   "review": "Transient ischemic attack as a serious warning."
+  },
+  {
+   "a": 2,
+   "o": [
+    "The part of the brain that controls speech",
+    "The dead core of the stroke",
+    "Damaged tissue around the core that can still be saved",
+    "The skull bone"
+   ],
+   "q": "What is the penumbra?",
+   "good": "Excellent! Fast treatment protects the penumbra.",
+   "hint": "It surrounds the core and can still recover.",
+   "review": "Core, penumbra and why time matters."
+  },
+  {
+   "a": 0,
+   "o": [
+    "High blood pressure",
+    "Drinking enough water",
+    "Sleeping eight hours",
+    "Being left-handed"
+   ],
+   "q": "Which is the biggest risk factor for stroke?",
+   "good": "Correct! High blood pressure damages and weakens the arteries.",
+   "hint": "It often has no symptoms and harms the artery walls.",
+   "review": "High blood pressure as the number one risk factor."
+  },
+  {
+   "a": 3,
+   "o": [
+    "Take a tablet",
+    "Think about it for an hour",
+    "Try to walk it off",
+    "Call emergency services immediately and note the time"
+   ],
+   "q": "In the word FAST, what does the letter T tell you to do?",
+   "good": "Right! Time is brain, and every minute counts.",
+   "hint": "It stands for time.",
+   "review": "The FAST warning signs and calling for help at once."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Note the time the symptoms began",
+    "Give the person food, drink, or medicine",
+    "Stay with the person",
+    "Call emergency services"
+   ],
+   "q": "While waiting for the ambulance, what should you NOT do?",
+   "good": "Correct! Doctors must first find out the type of stroke.",
+   "hint": "The treatments for a clot and for bleeding are opposite.",
+   "review": "What to do, and what not to do, in a suspected stroke."
+  },
+  {
+   "a": 3,
+   "o": [
+    "Adding extra salt to every meal",
+    "Staying inactive",
+    "Ignoring high blood pressure",
+    "Controlling blood pressure, eating well, moving daily, and not smoking"
+   ],
+   "q": "Which habit helps prevent stroke?",
+   "good": "Excellent! These steps cut your risk year after year.",
+   "hint": "Think about the five prevention steps in the lesson.",
+   "review": "The prevention steps: pressure, food, exercise, smoking, and treating causes."
+  }
+ ],
+ "captions": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/captions/269.json",
+ "announcements": [
+  {
+   "tag": "Homework",
+   "text": "Write down the four FAST signs and teach them to one person at home."
+  },
+  {
+   "tag": "Important Notice",
+   "text": "This lesson is for education only. In an emergency, call your local emergency number."
+  }
+ ],
+ "chat": true,
+ "passMark": 70,
+ "reportId": "269",
+ "disclaimer": "For educational purposes only; consult a licensed doctor for medical advice. If a stroke is suspected, call emergency services immediately.",
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/ok9.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/miss9.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-stroke-causes-warning-sign-269/rev9.mp3"
+  ]
+ }
+}
