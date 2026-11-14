@@ -1,0 +1,119 @@
+{
+ "title": "UNDERSTANDING INFECTION: HOW GERMS MAKE YOU SICK",
+ "video": {
+  "src": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/videos/272-preview.mp4"
+ },
+ "nextLesson": "HOW DO VACCINES TRAIN YOUR BODY?",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "A pain caused by tired muscles",
+    "Harmful germs getting inside the body and multiplying",
+    "A cold feeling in the weather",
+    "A kind of food"
+   ],
+   "q": "What is an infection?",
+   "good": "Correct! An infection is germs that get in and multiply.",
+   "hint": "Think about what germs do once they are inside.",
+   "review": "An infection is harmful germs that get inside the body and multiply."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Blood",
+    "Skin",
+    "Bacteria",
+    "Muscle"
+   ],
+   "q": "Which of these is a kind of germ?",
+   "good": "Yes! Bacteria, viruses, and fungi are the main kinds of germs.",
+   "hint": "Remember the three kinds shown in the second scene.",
+   "review": "The main germs are bacteria, viruses, and fungi."
+  },
+  {
+   "a": 2,
+   "o": [
+    "The stomach",
+    "The hair",
+    "Unbroken skin",
+    "The bones"
+   ],
+   "q": "What is the body's first shield against germs?",
+   "good": "Great! Unbroken skin blocks most germs.",
+   "hint": "It covers your whole body on the outside.",
+   "review": "Unbroken skin is the first shield. A cut opens a door for germs."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Fat cells",
+    "White blood cells",
+    "Hair cells",
+    "Bone cells"
+   ],
+   "q": "Which cells rush in to fight germs?",
+   "good": "Right! White blood cells attack and destroy germs.",
+   "hint": "They are part of your immune system.",
+   "review": "White blood cells surround and destroy germs."
+  },
+  {
+   "a": 0,
+   "o": [
+    "Washing hands with soap and water for twenty seconds",
+    "Wiping hands on your clothes",
+    "Rinsing hands quickly with no soap",
+    "Never touching anything"
+   ],
+   "q": "What is the best simple habit to stop most germs?",
+   "good": "Excellent! Twenty seconds of soap and water removes most germs.",
+   "hint": "Think about the habit from the prevention scene.",
+   "review": "Wash with soap and water for twenty seconds."
+  }
+ ],
+ "captions": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/captions/272.json",
+ "announcements": [
+  {
+   "tag": "Homework",
+   "text": "Wash your hands the right way today: soap, water, and twenty full seconds."
+  },
+  {
+   "tag": "Important Notice",
+   "text": "This lesson is for education only. If you feel very unwell, see a doctor."
+  }
+ ],
+ "chat": true,
+ "passMark": 70,
+ "reportId": "272",
+ "disclaimer": "For educational purposes only; consult a licensed doctor for medical advice. If you feel very unwell, get medical help immediately.",
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/ok4.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/miss0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/miss1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/miss4.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/understanding-infection-how-germs-make-y-272/rev4.mp3"
+  ]
+ }
+}
