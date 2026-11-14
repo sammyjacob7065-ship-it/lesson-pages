@@ -1,4 +1,4 @@
-// lesson-report-v90  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
+// lesson-report-v89  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
 // The manager's address never reaches the browser: the page sends only the episode id; this function reads REPORT_TO from your Supabase.
 // Sent through Brevo (free). Vercel settings needed: BREVO_API_KEY, SENDER_EMAIL (a sender you verified in Brevo), SUPABASE_URL, SUPABASE_KEY.
 const hits = new Map();
@@ -35,7 +35,6 @@ function build(b, cfg) {
 module.exports = async (req, res) => {
   res.setHeader('Content-Type', 'application/json'); res.setHeader('Cache-Control', 'no-store');
   const out = (code, obj) => { res.statusCode = code; res.end(JSON.stringify(obj)); };
-  if (req.method === 'GET') return out(200, { ok: true, version: 'v90', SENDER_EMAIL: !!String(process.env.SENDER_EMAIL || '').trim(), BREVO_API_KEY: !!process.env.BREVO_API_KEY, SUPABASE_URL: !!process.env.SUPABASE_URL, SUPABASE_KEY: !!process.env.SUPABASE_KEY });   // open /api/report in a browser: false = missing
   if (req.method !== 'POST') return out(405, { error: 'post_only' });
   const U = String(process.env.SENDER_EMAIL || '').trim(), P = process.env.BREVO_API_KEY, SU = String(process.env.SUPABASE_URL || '').replace(/\/+$/, ''), SK = process.env.SUPABASE_KEY;
   if (!U || !P || !SU || !SK) return out(503, { error: 'not_configured' });
