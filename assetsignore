@@ -1,0 +1,14 @@
+wrangler.jsonc
+.assetsignore
+src
+functions
+api
+package.json
+package-lock.json
+bun.lock
+bun.lockb
+node_modules
+report_apps_script.gs
+*.md
+.git
+.github
