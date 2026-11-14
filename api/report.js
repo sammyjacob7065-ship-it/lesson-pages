@@ -1,4 +1,4 @@
-// lesson-report-v94  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
+// lesson-report-v95  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
 // The manager's address never reaches the browser: the page sends only the episode id; this function reads REPORT_TO from your Supabase.
 // Two ways to send (use ONE):
 //  A) REPORT_WEBHOOK + REPORT_SECRET  = a free Google Apps Script that sends from your own Gmail (no domain needed).
@@ -51,7 +51,7 @@ module.exports = async (req, res) => {
   if (!b || typeof b !== 'object') return out(400, { error: 'bad_request' });
   const clean = x => String(x == null ? '' : x).replace(/[\r\n\t]+/g, ' ').trim();
   const id = clean(b.id), name = clean(b.name).slice(0, 80), email = clean(b.email).slice(0, 120), title = clean(b.title).slice(0, 120) || 'Lesson';
-  if (!/^[0-9a-f-]{8,64}$/i.test(id) || name.length < 2 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return out(400, { error: 'bad_request' });
+  if (!/^[A-Za-z0-9_-]{1,64}$/.test(id) || name.length < 2 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return out(400, { error: 'bad_request' });
   const A = (Array.isArray(b.attempts) ? b.attempts : []).slice(0, 30).map((a, k) => ({ n: k + 1, correct: Math.max(0, parseInt(a && a.correct, 10) || 0), total: Math.max(1, parseInt(a && a.total, 10) || 1), pct: Math.max(0, Math.min(100, parseInt(a && a.pct, 10) || 0)) }));
   if (!A.length) return out(400, { error: 'bad_request' });
   try {
