@@ -1,6 +1,9 @@
-// lesson-report-v89  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
+// lesson-report-v91  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
 // The manager's address never reaches the browser: the page sends only the episode id; this function reads REPORT_TO from your Supabase.
-// Sent through Brevo (free). Vercel settings needed: BREVO_API_KEY, SENDER_EMAIL (a sender you verified in Brevo), SUPABASE_URL, SUPABASE_KEY.
+// Two ways to send (use ONE):
+//  A) REPORT_WEBHOOK + REPORT_SECRET  = a free Google Apps Script that sends from your own Gmail (no domain needed).
+//  B) BREVO_API_KEY + SENDER_EMAIL    = Brevo (best with your own domain).
+// Always needed: SUPABASE_URL, SUPABASE_KEY.
 const hits = new Map();
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const ord = n => ['', 'First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth'][n] || (n + 'th');
@@ -35,9 +38,11 @@ function build(b, cfg) {
 module.exports = async (req, res) => {
   res.setHeader('Content-Type', 'application/json'); res.setHeader('Cache-Control', 'no-store');
   const out = (code, obj) => { res.statusCode = code; res.end(JSON.stringify(obj)); };
+  if (req.method === 'GET') return out(200, { ok: true, version: 'v91', REPORT_WEBHOOK: !!process.env.REPORT_WEBHOOK, REPORT_SECRET: !!process.env.REPORT_SECRET, SENDER_EMAIL: !!String(process.env.SENDER_EMAIL || '').trim(), BREVO_API_KEY: !!process.env.BREVO_API_KEY, SUPABASE_URL: !!process.env.SUPABASE_URL, SUPABASE_KEY: !!process.env.SUPABASE_KEY });   // open /api/report in a browser: false = missing
   if (req.method !== 'POST') return out(405, { error: 'post_only' });
   const U = String(process.env.SENDER_EMAIL || '').trim(), P = process.env.BREVO_API_KEY, SU = String(process.env.SUPABASE_URL || '').replace(/\/+$/, ''), SK = process.env.SUPABASE_KEY;
-  if (!U || !P || !SU || !SK) return out(503, { error: 'not_configured' });
+  const WH = String(process.env.REPORT_WEBHOOK || '').trim(), WS = String(process.env.REPORT_SECRET || '').trim();
+  if (!SU || !SK || !((WH && WS) || (U && P))) return out(503, { error: 'not_configured' });
   const ip = String((req.headers['x-forwarded-for'] || '').split(',')[0] || 'x').trim(), now = Date.now();
   const h = (hits.get(ip) || []).filter(t => now - t < 10 * 60 * 1000);
   if (h.length >= 6) return out(429, { error: 'slow_down' });
@@ -58,6 +63,12 @@ module.exports = async (req, res) => {
     if (!to.length) return out(404, { error: 'no_report_address' });
     const cfg = { passMark: Math.max(1, Math.min(100, parseInt(s0.pass_mark, 10) || 100)), org: clean(s0.report_org).slice(0, 80) };
     const m = build({ name, email, title, attempts: A }, cfg);
+    if (WH && WS && !process.env.REPORT_DRY_RUN) {
+      const wr = await fetch(WH, { method: 'POST', headers: { 'content-type': 'text/plain;charset=utf-8' }, redirect: 'follow', body: JSON.stringify({ secret: WS, to: to, subject: m.subject, html: m.html, text: m.text, replyTo: email, fromName: (cfg.org || 'Lesson report') }) });
+      let wj = null; try { wj = JSON.parse(await wr.text()); } catch (e) { }
+      if (!wj || wj.ok !== true) return out(502, { error: 'send_failed' });
+      return out(200, { ok: true });
+    }
     const payload = { sender: { name: (name.replace(/[\"<>\\]/g, '') + ' (' + (cfg.org || 'Lesson report') + ')').slice(0, 120), email: U }, to: to.map(x => ({ email: x })), replyTo: { email: email, name: name.replace(/[\"<>\\]/g, '') }, subject: m.subject, htmlContent: m.html, textContent: m.text };
     if (process.env.REPORT_DRY_RUN) return out(200, { ok: true, dry: payload });
     const br = await fetch('https://api.brevo.com/v3/smtp/email', { method: 'POST', headers: { 'api-key': P, 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify(payload) });
