@@ -1,5 +1,5 @@
 wrangler.jsonc
-.assetsignore
+assetsignore
 src
 functions
 api
