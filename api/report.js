@@ -1,4 +1,4 @@
-// lesson-report-v91  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
+// lesson-report-v94  -  "Send my result": emails the staff member's name, email, every attempt and the overall score to the manager.
 // The manager's address never reaches the browser: the page sends only the episode id; this function reads REPORT_TO from your Supabase.
 // Two ways to send (use ONE):
 //  A) REPORT_WEBHOOK + REPORT_SECRET  = a free Google Apps Script that sends from your own Gmail (no domain needed).
@@ -56,23 +56,25 @@ module.exports = async (req, res) => {
   if (!A.length) return out(400, { error: 'bad_request' });
   try {
     const r = await fetch(SU + '/rest/v1/episodes?id=eq.' + encodeURIComponent(id) + '&select=scenes&limit=1', { headers: { apikey: SK, Authorization: 'Bearer ' + SK } });
+    if (!r.ok) return out(502, { error: 'send_failed', why: 'supabase_' + r.status });
     const rows = await r.json();
     const sc = Array.isArray(rows) && rows[0] && Array.isArray(rows[0].scenes) ? rows[0].scenes : [];
     const s0 = sc.find(s => s && s.lesson_page) || {};
     const to = (Array.isArray(s0.report_to) ? s0.report_to : []).filter(x => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x)).slice(0, 3);
-    if (!to.length) return out(404, { error: 'no_report_address' });
+    if (!to.length) return out(404, { error: 'no_report_address', why: 'no_report_address_for_this_lesson' });
     const cfg = { passMark: Math.max(1, Math.min(100, parseInt(s0.pass_mark, 10) || 100)), org: clean(s0.report_org).slice(0, 80) };
     const m = build({ name, email, title, attempts: A }, cfg);
     if (WH && WS && !process.env.REPORT_DRY_RUN) {
       const wr = await fetch(WH, { method: 'POST', headers: { 'content-type': 'text/plain;charset=utf-8' }, redirect: 'follow', body: JSON.stringify({ secret: WS, to: to, subject: m.subject, html: m.html, text: m.text, replyTo: email, fromName: (cfg.org || 'Lesson report') }) });
-      let wj = null; try { wj = JSON.parse(await wr.text()); } catch (e) { }
-      if (!wj || wj.ok !== true) return out(502, { error: 'send_failed' });
+      const wt = await wr.text(); let wj = null; try { wj = JSON.parse(wt); } catch (e) { }
+      if (!wj) return out(502, { error: 'send_failed', why: wr.ok ? 'script_not_public_or_wrong_url' : 'script_http_' + wr.status });
+      if (wj.ok !== true) return out(502, { error: 'send_failed', why: String(wj.error || 'script_refused').replace(/[^\w .:-]/g, '').slice(0, 80) });
       return out(200, { ok: true });
     }
     const payload = { sender: { name: (name.replace(/[\"<>\\]/g, '') + ' (' + (cfg.org || 'Lesson report') + ')').slice(0, 120), email: U }, to: to.map(x => ({ email: x })), replyTo: { email: email, name: name.replace(/[\"<>\\]/g, '') }, subject: m.subject, htmlContent: m.html, textContent: m.text };
     if (process.env.REPORT_DRY_RUN) return out(200, { ok: true, dry: payload });
     const br = await fetch('https://api.brevo.com/v3/smtp/email', { method: 'POST', headers: { 'api-key': P, 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify(payload) });
-    if (!br.ok) return out(502, { error: 'send_failed' });
+    if (!br.ok) return out(502, { error: 'send_failed', why: 'brevo_' + br.status });
     return out(200, { ok: true });
-  } catch (e) { return out(502, { error: 'send_failed' }); }
+  } catch (e) { return out(502, { error: 'send_failed', why: 'crash_' + String((e && e.message) || e).replace(/[^\w .:-]/g, '').slice(0, 60) }); }
 };
