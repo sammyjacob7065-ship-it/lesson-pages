@@ -1,0 +1,21 @@
+{
+ "title": "WELCOME TO LUMEN HOTEL: STAFF ONBOARDING",
+ "video": {
+  "src": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/videos/279-preview.mp4"
+ },
+ "questions": [],
+ "captions": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/captions/279.json",
+ "announcements": [
+  {
+   "tag": "Important Notice",
+   "text": "On your first morning, arrive at 7:45 AM. Collect your uniform and name tag from Human Resources."
+  },
+  {
+   "tag": "Homework",
+   "text": "Write down the name and role of every person you meet today."
+  }
+ ],
+ "chat": true,
+ "passMark": 70,
+ "reportId": "279"
+}
