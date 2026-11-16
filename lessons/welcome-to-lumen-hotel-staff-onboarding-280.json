@@ -1,0 +1,198 @@
+{
+ "title": "WELCOME TO LUMEN HOTEL: STAFF ONBOARDING",
+ "video": {
+  "src": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/videos/280-preview.mp4"
+ },
+ "nextLesson": "YOUR FIRST DAY AT THE FRONT DESK",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "Seven o'clock",
+    "Eight o'clock",
+    "Nine o'clock",
+    "Ten o'clock"
+   ],
+   "q": "What time does the morning shift start?",
+   "good": "Correct! We resume at eight o'clock sharp.",
+   "hint": "Think about the shift times in the working-day scene.",
+   "review": "The morning shift starts at eight o'clock. Arrive fifteen minutes early."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Sixty",
+    "Ninety",
+    "One hundred and twenty",
+    "One hundred and fifty"
+   ],
+   "q": "How many rooms does Lumen Hotel have?",
+   "good": "Right! We have one hundred and twenty rooms on five floors.",
+   "hint": "Remember the number from the about-our-hotel scene.",
+   "review": "The hotel has five floors and one hundred and twenty rooms."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Eleven in the morning",
+    "Twelve noon",
+    "Three in the afternoon",
+    "Six in the evening"
+   ],
+   "q": "At what time does guest check-in start?",
+   "good": "Correct! Check-in is at three in the afternoon, and check-out is at eleven in the morning.",
+   "hint": "It is the time guests arrive in the afternoon.",
+   "review": "Check-in starts at three in the afternoon. Check-out is at eleven in the morning"
+  },
+  {
+   "a": 1,
+   "o": [
+    "Mr. Idowu",
+    "Mr. Kola",
+    "Mr. Femi",
+    "Mr. Emeka"
+   ],
+   "q": "Who leads the front desk reception team?",
+   "good": "Yes! Mr. Kola is our Front Desk Supervisor.",
+   "hint": "He wears a supervisor badge and a gold tie.",
+   "review": "Mr. Kola is the Front Desk Supervisor and leads Abel, Nelson, Tunde, and Aishat."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Fifteen minutes",
+    "Thirty minutes",
+    "Forty-five minutes",
+    "Two hours"
+   ],
+   "q": "How long is your meal break?",
+   "good": "Correct! One forty-five-minute meal break, plus two fifteen-minute rest breaks.",
+   "hint": "It is longer than the short rest breaks.",
+   "review": "Each shift has one forty-five-minute meal break and two fifteen-minute rest brea"
+  },
+  {
+   "a": 2,
+   "o": [
+    "Casual clothes",
+    "Only a name tag",
+    "Your clean uniform and your name tag",
+    "Whatever you like"
+   ],
+   "q": "What must you wear at all times during your shift?",
+   "good": "Right! Guests judge our hotel by how we look.",
+   "hint": "Think about the uniform scene.",
+   "review": "Always wear a clean, pressed uniform and your name tag."
+  },
+  {
+   "a": 2,
+   "o": [
+    "When you are free",
+    "After five minutes",
+    "Within ten seconds",
+    "Only if they speak first"
+   ],
+   "q": "A guest walks in. How soon should you greet them with a smile?",
+   "good": "Correct! Greet guests within ten seconds.",
+   "hint": "It is a very short time.",
+   "review": "Smile and greet every guest within ten seconds."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Explain why they are wrong",
+    "Listen calmly without interrupting",
+    "Walk away",
+    "Offer a free room"
+   ],
+   "q": "What is the first step when a guest is unhappy?",
+   "good": "Yes! Listen first, then apologize, solve, and thank.",
+   "hint": "It is the first word you heard in that scene.",
+   "review": "Listen, apologize, solve the problem, and thank the guest."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Tell them the number",
+    "Give the number to a friend",
+    "Do not say it, and offer to connect the call instead",
+    "Hang up"
+   ],
+   "q": "A caller asks for a guest's room number. What do you do?",
+   "good": "Correct! Guest privacy comes first.",
+   "hint": "Remember the safety and privacy scene.",
+   "review": "Never give out a room number. Offer to connect the call."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Ignore it",
+    "Post it online",
+    "Report it to security straight away",
+    "Wait until tomorrow"
+   ],
+   "q": "What should you do if you see something unusual?",
+   "good": "Right! Report anything unusual to security at once.",
+   "hint": "Think about who keeps the hotel safe.",
+   "review": "Report anything unusual to security straight away."
+  }
+ ],
+ "captions": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/captions/280.json",
+ "announcements": [
+  {
+   "tag": "Important Notice",
+   "text": "On your first morning, arrive at 7:45 AM. Collect your uniform and name tag from Human Resources."
+  },
+  {
+   "tag": "Homework",
+   "text": "Write down the name and role of every person you meet today."
+  }
+ ],
+ "chat": true,
+ "passMark": 70,
+ "reportId": "280",
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/ok9.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/miss9.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/welcome-to-lumen-hotel-staff-onboarding-280/rev9.mp3"
+  ]
+ }
+}
