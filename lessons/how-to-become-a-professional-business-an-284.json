@@ -1,0 +1,200 @@
+{
+ "title": "HOW TO BECOME A PROFESSIONAL BUSINESS ANALYST",
+ "video": {
+  "src": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/videos/284-preview.mp4",
+  "youtube": "ZDDu3CWrZrs"
+ },
+ "nextLesson": "BUSINESS ANALYSIS FUNDAMENTALS: HOW TO GATHER AND DOCUMENT REQUIREMENTS",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "To write computer code for every project",
+    "To understand business problems and help identify suitable solutions",
+    "To manage every employee in an organisation",
+    "To design company logos"
+   ],
+   "q": "What is the primary role of a business analyst?",
+   "good": "Correct! A business analyst helps organisations understand problems and identify appropriate solutions.",
+   "hint": "Think about the person who connects business needs with solutions.",
+   "review": "The role and purpose of a business analyst."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Only the company's directors",
+    "Only software developers",
+    "People affected by a project or interested in its outcome",
+    "Only customers who complain"
+   ],
+   "q": "Who are stakeholders?",
+   "good": "Excellent! Stakeholders can include customers, employees, managers, suppliers and developers.",
+   "hint": "Think about everyone who has an interest in the project.",
+   "review": "Stakeholders and their different perspectives."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Immediately purchase new software",
+    "Investigate the problem and collect reliable information",
+    "Replace the entire management team",
+    "Ignore employee feedback"
+   ],
+   "q": "What should a business analyst do before recommending a solution?",
+   "good": "Correct! Understanding the real problem comes before choosing a solution.",
+   "hint": "Do not guess. Find out what is actually happening.",
+   "review": "Investigation, observation and information gathering."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Personal opinions about a project",
+    "The needs or conditions a business or its users expect a solution to satisfy",
+    "The salaries of project employees",
+    "A list of company holidays"
+   ],
+   "q": "What are business requirements?",
+   "good": "Well done! Requirements describe what the business or users need from a solution.",
+   "hint": "They explain what the solution must provide.",
+   "review": "Requirements gathering and documentation."
+  },
+  {
+   "a": 2,
+   "o": [
+    "To decorate a business presentation",
+    "To calculate employee salaries",
+    "To show the steps involved in a business process",
+    "To replace all business employees"
+   ],
+   "q": "What is the purpose of process mapping?",
+   "good": "Correct! Process maps help people understand how work moves through a business.",
+   "hint": "Think about showing a process from its beginning to its end.",
+   "review": "Process analysis and process mapping."
+  },
+  {
+   "a": 1,
+   "o": [
+    "AS-IS means future, while TO-BE means past",
+    "AS-IS describes the current process, while TO-BE describes the desired future process",
+    "Both terms mean exactly the same thing",
+    "They are software programming languages"
+   ],
+   "q": "What is the difference between AS-IS and TO-BE?",
+   "good": "Excellent! AS-IS shows the current situation, while TO-BE shows the intended improvement.",
+   "hint": "One describes what happens now; the other describes what should happen.",
+   "review": "Current-state and future-state process analysis."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Avoiding communication",
+    "Ignoring details",
+    "Analytical thinking and problem-solving",
+    "Making decisions without evidence"
+   ],
+   "q": "Which of these is an example of an essential business analyst skill?",
+   "good": "Correct! Analytical thinking and problem-solving help analysts understand issues and recommend solutions.",
+   "hint": "Think about the skills needed to investigate a business problem.",
+   "review": "Communication, analysis, problem-solving and attention to detail."
+  },
+  {
+   "a": 1,
+   "o": [
+    "A music player",
+    "Jira",
+    "A photo editing application",
+    "A video game"
+   ],
+   "q": "Which tool is commonly used for managing project work and requirements?",
+   "good": "Right! Jira is commonly used by teams to manage project work and track requirements.",
+   "hint": "It is a project and issue-tracking tool.",
+   "review": "Common business analysis tools and their uses."
+  },
+  {
+   "a": 3,
+   "o": [
+    "To avoid learning practical skills",
+    "To replace every job interview",
+    "To collect unrelated documents",
+    "To demonstrate practical skills and problem-solving ability"
+   ],
+   "q": "Why should a beginner business analyst build a portfolio?",
+   "good": "Excellent! A portfolio gives employers examples of how you approach and document business problems.",
+   "hint": "Think about how you can prove what you are capable of doing.",
+   "review": "Practical projects, experience and portfolio development."
+  },
+  {
+   "a": 3,
+   "o": [
+    "Stop learning after receiving a certificate",
+    "Recommend solutions without investigating problems",
+    "Avoid working with stakeholders",
+    "Continue learning, practise with real problems and build professional experience"
+   ],
+   "q": "Which approach best supports a successful business analyst career?",
+   "good": "Correct! A professional business analyst keeps improving, gains experience and adapts to changing business needs.",
+   "hint": "Professional growth requires continuous learning and practical experience.",
+   "review": "Building a sustainable business analyst career."
+  }
+ ],
+ "captions": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/captions/284.json",
+ "announcements": [
+  {
+   "tag": "Important Notice",
+   "text": "Learning objective | By the end of this lesson, you should understand what a business analyst does, the essential skills required, the tools used in the profession and how to begin your career."
+  },
+  {
+   "tag": "Homework",
+   "text": "Identify one everyday business problem and write down how you would investigate it and recommend a solution."
+  }
+ ],
+ "chat": true,
+ "passMark": 70,
+ "reportId": "284",
+ "disclaimer": "This lesson is for educational purposes. Professional business analysis requires continuous learning, practical experience and adaptation to each organisation.",
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/ok9.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/miss9.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev6.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev7.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev8.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/how-to-become-a-professional-business-an-284/rev9.mp3"
+  ]
+ }
+}
