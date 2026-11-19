@@ -1,7 +1,8 @@
 {
  "title": "CYBERSECURITY FOR BEGINNERS",
  "video": {
-  "src": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/videos/286-preview.mp4"
+  "src": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/videos/286-preview.mp4",
+  "youtube": "XvqNM6UVNGQ"
  },
  "nextLesson": "PASSWORD MANAGERS AND TWO-STEP VERIFICATION: A HANDS-ON SETUP",
  "questions": [
