@@ -1,0 +1,151 @@
+{
+ "title": "CYBERSECURITY FOR BEGINNERS",
+ "video": {
+  "src": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/videos/286-preview.mp4"
+ },
+ "nextLesson": "PASSWORD MANAGERS AND TWO-STEP VERIFICATION: A HANDS-ON SETUP",
+ "questions": [
+  {
+   "a": 1,
+   "o": [
+    "Only buying a new phone",
+    "Protecting your devices, accounts and data from people who want to misuse them",
+    "Deleting all your online accounts",
+    "Using the internet less"
+   ],
+   "q": "What does cybersecurity mean?",
+   "good": "Correct! Cybersecurity protects your devices, accounts and personal data.",
+   "hint": "Think about what a shield protects.",
+   "review": "What cybersecurity is and why everyone needs it."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Using the same short password everywhere",
+    "Using your name and birth year",
+    "Using a long, unique password for each account",
+    "Writing your password in a message to a friend"
+   ],
+   "q": "Which of these is the strongest way to protect your accounts?",
+   "good": "Excellent! Long, unique passwords mean one stolen password cannot open your other accounts.",
+   "hint": "One key should not open every door.",
+   "review": "Strong passwords and password managers."
+  },
+  {
+   "a": 2,
+   "o": [
+    "A faster login without any password",
+    "A free antivirus",
+    "A second proof, like a code, after your password",
+    "A bigger storage space"
+   ],
+   "q": "What does two-step verification add to your account?",
+   "good": "Right! Even if a thief steals your password, he still needs the second proof.",
+   "hint": "It comes after the password.",
+   "review": "Two-step verification and why it matters."
+  },
+  {
+   "a": 1,
+   "o": [
+    "They only change how the phone looks",
+    "They fix security holes that attackers already know about",
+    "They delete your old files",
+    "They make your internet faster in every case"
+   ],
+   "q": "Why should you install software updates?",
+   "good": "Correct! Updates close known security holes.",
+   "hint": "Think about the patch on the cracked wall.",
+   "review": "Keeping devices and apps updated."
+  },
+  {
+   "a": 1,
+   "o": [
+    "Keeping one copy on the same phone",
+    "Keeping copies in more than one place, with one copy away from your device",
+    "Never making a copy",
+    "Sending your files to a stranger"
+   ],
+   "q": "Which backup habit is the safest?",
+   "good": "Well done! Copies in different places protect you if one is lost, stolen or locked by a virus.",
+   "hint": "Do not keep everything in one place.",
+   "review": "The backup rule and why cloud storage helps."
+  },
+  {
+   "a": 1,
+   "o": [
+    "It comes from a friend you were chatting with",
+    "It is urgent, has an unexpected link and asks for your password or code",
+    "It has your correct name only",
+    "It is a message from your own mother on the phone"
+   ],
+   "q": "Which is a red flag of a phishing message?",
+   "good": "Excellent! Urgent messages, strange links and requests for secrets are phishing signs.",
+   "hint": "Think about the four red flags.",
+   "review": "Spotting phishing and what to do."
+  },
+  {
+   "a": 2,
+   "o": [
+    "Give the code quickly to avoid trouble",
+    "Give only half of the code",
+    "Hang up and call your bank using the number on your card",
+    "Send the code in a message instead"
+   ],
+   "q": "A caller says he is from your bank and asks for your one-time code. What should you do?",
+   "good": "Correct! Real banks never need your one-time code or PIN.",
+   "hint": "Never share the code. Check using a number you trust.",
+   "review": "Social engineering and how to respond."
+  }
+ ],
+ "captions": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/captions/286.json",
+ "announcements": [
+  {
+   "tag": "Important Notice",
+   "text": "Learning objective | By the end of this lesson, you should know how attackers get in, and the simple steps that keep your phone, accounts and money safe."
+  },
+  {
+   "tag": "Homework",
+   "text": "Today, turn on two-step verification for your email account and change one weak password."
+  }
+ ],
+ "chat": true,
+ "passMark": 70,
+ "reportId": "286",
+ "disclaimer": "This lesson is for educational purposes. Use these skills to protect your own accounts and devices. Never test, attack or enter any system that you do not own or have clear permission to use.",
+ "audio": {
+  "start": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/start.mp3",
+  "next": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/next.mp3",
+  "intro": {
+   "perfect": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ip.mp3",
+   "good": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ig.mp3",
+   "low": "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/il.mp3"
+  },
+  "ok": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ok0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ok1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ok2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ok3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ok4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ok5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/ok6.mp3"
+  ],
+  "miss": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/miss0.mp3",
+   null,
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/miss2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/miss3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/miss4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/miss5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/miss6.mp3"
+  ],
+  "rev": [
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/rev0.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/rev1.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/rev2.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/rev3.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/rev4.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/rev5.mp3",
+   "https://njijwtcamdsorymzanpj.supabase.co/storage/v1/object/public/betrayer-assets/lessons/cybersecurity-for-beginners-286/rev6.mp3"
+  ]
+ }
+}
